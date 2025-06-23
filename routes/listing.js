@@ -12,8 +12,6 @@ const upload = multer({ storage });
 
 router
   .route("/")
-  // create home route
-  .get(wrapasync(listingController.home))
   // create index route
   .get(wrapasync(listingController.index))
   //  create post route to new listing
